@@ -230,7 +230,7 @@ function defer(method) {
 }
 
 defer(function() {
-      $.get('https://github.com/kevinchau321', function(data){
+      $.get('test.html', function(data){
      var content = $(data).find('.js-contribution-graph');
      $(content).find('.contributions-setting').remove();
      $('.col-9').append(content);
