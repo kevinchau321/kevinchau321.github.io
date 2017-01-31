@@ -249,7 +249,17 @@ defer(function() {
   })();
 });
 
-setTimeout(function() { $.getScript('iso/iso.js'); }, 1000);
+function checkFlag() {
+    if($('body').find('.js-contribution-graph').length === 0) {
+       window.setTimeout(checkFlag, 100); /* this checks the flag every 100 milliseconds*/
+    } else {
+      /* do something*/
+      $.getScript('iso/iso.js');
+    }
+}
+checkFlag();
+
+
 </script>
 
 
