@@ -232,14 +232,13 @@ function defer(method) {
 defer(function() {
       $.get('test.html', function(data){
      var content = $(data).find('.js-contribution-graph');
+     $(content).find('.contributions-setting').remove();
      $('.col-9').append(content);
  })
 });
 
 $.getScript('iso/iso.js');
 </script>
-
-
 
 
   </body>
