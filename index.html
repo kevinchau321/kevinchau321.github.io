@@ -222,13 +222,22 @@
 
 
 <script>
-var content;
-$.get('test.html', function(data){
-    content = $(data).find('.js-contribution-graph');
-    $('.col-9').append(content);
+function defer(method) {
+    if (window.jQuery)
+        method();
+    else
+        setTimeout(function() { defer(method) }, 50);
+}
+
+defer(function() {
+      $.get('test.html', function(data){
+     var content = $(data).find('.js-contribution-graph');
+     $('.col-9').append(content);
+ })
 });
+
+$.getScript('iso/iso.js');
 </script>
-<script src="iso/iso.js"></script>
 
 
 
