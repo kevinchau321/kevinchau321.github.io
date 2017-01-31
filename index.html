@@ -229,8 +229,6 @@ function defer(method) {
         setTimeout(function() { defer(method) }, 50);
 }
 
-
-
 defer(function() {
   var cors_api_url = 'https://cors-anywhere.herokuapp.com/';
   function doCORSRequest(options, printResult) {
@@ -249,16 +247,9 @@ defer(function() {
         method: 'GET',
       });
   })();
-  $.getScript('iso/iso.js');
 });
 
-// defer(function() {
-//       $.get('test.html', function(data){
-//      var content = $(data).find('.js-contribution-graph');
-//      $(content).find('.contributions-setting').remove();
-//      $('.col-9').append(content);
-//  })
-// });
+setTimeout(function() { $.getScript('iso/iso.js'); }, 1000);
 </script>
 
 
