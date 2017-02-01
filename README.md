@@ -1,6 +1,7 @@
 # kevinchau321.github.io:
 
   ~~Background: Ableton Push background~~
+  * monokai colors for normal graph
   * Mobile friendly
   * Twitter/github activity feed
   * links to github io pages for projects

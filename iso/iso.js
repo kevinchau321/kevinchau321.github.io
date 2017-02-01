@@ -4,7 +4,7 @@ var Iso;
 Iso = (function() {
   var COLORS, bestDay, contributionsBox, dateOptions, dateWithYearOptions, firstDay, lastDay, maxCount, yearTotal;
 
-  COLORS = [new obelisk.CubeColor().getByHorizontalColor(0xFFFFFF),
+  COLORS = [new obelisk.CubeColor().getByHorizontalColor(0xEEEEEE),
             new obelisk.CubeColor().getByHorizontalColor(0x66D9EF),
             new obelisk.CubeColor().getByHorizontalColor(0xF92672),
             new obelisk.CubeColor().getByHorizontalColor(0xA6E22E),
@@ -282,43 +282,24 @@ Iso = (function() {
     });
   };
 
-  var randColor = function () {
-    var randnum = Math.random();
-      if (randnum < .33){
-        return COLORS[1];
-      } else if (randnum < .66){
-        return COLORS[5];
-      } else {
-        return COLORS[6];
-      }
-  };
 
   Iso.prototype.getSquareColor = function(fill) {
     var color;
     return color = (function() {
-      switch (fill.toLowerCase()) {
-        case 'rgb(238, 238, 238)':
-        case '#eeeeee':
+      switch (fill.toUpperCase()) {
+        case '#EEEEEE':
           return COLORS[0];
-        case 'rgb(214, 230, 133)':
-        case '#d6e685':
-        case 'rgb(255, 238, 74)':
-        case '#ffee4a':
-          return randColor();
-        case 'rgb(140, 198, 101)':
-        case '#8cc665':
-        case 'rgb(255, 197, 1)':
-        case '#ffc501':
+        case '#AE81FF':
+          return COLORS[5];
+        case '#66D9EF':
+          return COLORS[1];
+        case '#E6DB74':
+          return COLORS[6];
+        case '#F92672':
           return COLORS[2];
-        case 'rgb(68, 163, 64)':
-        case '#44a340':
-        case 'rgb(254, 150, 0)':
-        case '#fe9600':
+        case '#A6E22E':
           return COLORS[3];
-        case 'rgb(30, 104, 35)':
-        case '#1e6823':
-        case 'rgb(3, 0, 28)':
-        case '#03001c':
+        case '#FD971F':
           return COLORS[4];
       }
     })();
