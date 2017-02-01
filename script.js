@@ -14,6 +14,7 @@ defer(function() {
       var content = $(x.responseText).find('.js-contribution-graph');
       $(content).find('.contributions-setting').remove();
       $(content).find('.float-left.text-gray').remove();
+      $(content).find('.contrib-legend').remove();
       $('.col-9').append(content);
     };
     x.send(options.data);
