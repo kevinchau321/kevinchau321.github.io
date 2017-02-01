@@ -4,7 +4,13 @@ var Iso;
 Iso = (function() {
   var COLORS, bestDay, contributionsBox, dateOptions, dateWithYearOptions, firstDay, lastDay, maxCount, yearTotal;
 
-  COLORS = [new obelisk.CubeColor().getByHorizontalColor(0x272822), new obelisk.CubeColor().getByHorizontalColor(0x66D9EF), new obelisk.CubeColor().getByHorizontalColor(0xF92672), new obelisk.CubeColor().getByHorizontalColor(0xA6E22E), new obelisk.CubeColor().getByHorizontalColor(0xFD971F)];
+  COLORS = [new obelisk.CubeColor().getByHorizontalColor(0x272822),
+            new obelisk.CubeColor().getByHorizontalColor(0x66D9EF),
+            new obelisk.CubeColor().getByHorizontalColor(0xF92672),
+            new obelisk.CubeColor().getByHorizontalColor(0xA6E22E),
+            new obelisk.CubeColor().getByHorizontalColor(0xFD971F),
+            new obelisk.CubeColor().getByHorizontalColor(0xAE81FF),
+            new obelisk.CubeColor().getByHorizontalColor(0xE6DB74)];
 
   yearTotal = 0;
 
@@ -276,6 +282,17 @@ Iso = (function() {
     });
   };
 
+  var randColor = function () {
+    var randnum = Math.random();
+      if (randnum < .33){
+        return COLORS[1];
+      } else if (randnum < .66){
+        return COLORS[5];
+      } else {
+        return COLORS[6];
+      }
+  };
+
   Iso.prototype.getSquareColor = function(fill) {
     var color;
     return color = (function() {
@@ -287,7 +304,7 @@ Iso = (function() {
         case '#d6e685':
         case 'rgb(255, 238, 74)':
         case '#ffee4a':
-          return COLORS[1];
+          return randColor();
         case 'rgb(140, 198, 101)':
         case '#8cc665':
         case 'rgb(255, 197, 1)':
