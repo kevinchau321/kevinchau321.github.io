@@ -4,7 +4,7 @@ var Iso;
 Iso = (function() {
   var COLORS, bestDay, contributionsBox, dateOptions, dateWithYearOptions, firstDay, lastDay, maxCount, yearTotal;
 
-  COLORS = [new obelisk.CubeColor().getByHorizontalColor(0xeeeeee), new obelisk.CubeColor().getByHorizontalColor(0xd6e685), new obelisk.CubeColor().getByHorizontalColor(0x8cc665), new obelisk.CubeColor().getByHorizontalColor(0x44a340), new obelisk.CubeColor().getByHorizontalColor(0x1e6823)];
+  COLORS = [new obelisk.CubeColor().getByHorizontalColor(0x272822), new obelisk.CubeColor().getByHorizontalColor(0x66D9EF), new obelisk.CubeColor().getByHorizontalColor(0xF92672), new obelisk.CubeColor().getByHorizontalColor(0xA6E22E), new obelisk.CubeColor().getByHorizontalColor(0xFD971F)];
 
   yearTotal = 0;
 
