@@ -1,3 +1,16 @@
-* TO-DO:
-  * remove test.html, use github profile
-  * change isometric colors
+# kevinchau321.github.io:
+
+  ~~Background: Ableton Push background~~
+  * Mobile friendly
+  * Twitter/github activity feed
+  * links to github io pages for projects
+  * links to social media: twitter, soundcloud, facebook, etc. [DONE]
+  * links to email [done]
+
+  * 3D contribution activity (monokai color scheme) [DONE]
+
+  # Example Pages:
+  * addyosmani.github.io
+  * mojombo.github.io
+  * http://defunkt.io/
+  *  mbostock.github.io
