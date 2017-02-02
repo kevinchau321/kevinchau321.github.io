@@ -74,7 +74,7 @@ window.mobilecheck = function() {
   return check;
 };
 
-if(window.mobilecheck) {
+if(window.mobilecheck()) {
   console.log("mobile user detected");
   $('.col-9.float-left.pl-2').append('<img src="iso/screenshot.png" style="width: 100%;"></img>');
 }
