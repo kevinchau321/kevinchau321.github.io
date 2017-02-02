@@ -17,7 +17,7 @@ defer(function() {
             var content = $(x.responseText).find('.js-contribution-graph');
             $(content).find('.contributions-setting').remove();
             $(content).find('.float-left.text-gray').remove();
-            $(content).find('.contrib-legend').remove();
+            $('.legend').html('<ul class="legend"><li style="background-color: #eee"></li><li style="background-color: #E6DB74"></li><li style="background-color: #66D9EF"></li><li style="background-color: #AE81FF"></li><li style="background-color: #F92672"></li><li style="background-color: #A6E22E"></li><li style="background-color: #FD971F"></li></ul>');
             $('.col-9').append(content);
         };
         x.send(options.data);
