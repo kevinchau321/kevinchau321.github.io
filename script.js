@@ -10,6 +10,8 @@ function defer(method) {
 defer(function() {
     var cors_api_url = 'https://kevins-cors-anywhere.herokuapp.com/';
 
+    // var cors_api_url = 'https://cors-anywhere.herokuapp.com/';
+
     function doCORSRequest(options, printResult) {
         var x = new XMLHttpRequest();
         x.open('GET', cors_api_url + 'github.com/kevinchau321');
@@ -35,7 +37,7 @@ function checkFlag() {
         /* do something*/
         $.getScript('iso/iso.js');
         pridifyRectangles();
-        $('.legend').html('<ul class="legend"><li style="background-color: #eee"></li> <li style="background-color: #E6DB74"></li> <li style="background-color: #66D9EF"></li> <li style="background-color: #AE81FF"></li> <li style="background-color: #F92672"></li> <li style="background-color: #A6E22E"></li> <li style="background-color: #FD971F"></li> </ul>');
+        $('.legend').html('<ul class="legend"><li style="background-color: #eee"> <li style="background-color: #E6DB74"></li><br> <li style="background-color: #66D9EF"></li> <li style="background-color: #AE81FF"></li> <li style="background-color: #F92672"></li> <li style="background-color: #A6E22E"></li> <li style="background-color: #FD971F"></li> </ul>');
     }
 }
 checkFlag();
