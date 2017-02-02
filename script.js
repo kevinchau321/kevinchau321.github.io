@@ -8,9 +8,9 @@ function defer(method) {
 }
 
 defer(function() {
-    var cors_api_url = 'https://kevins-cors-anywhere.herokuapp.com/';
+    // var cors_api_url = 'https://kevins-cors-anywhere.herokuapp.com/';
 
-    // var cors_api_url = 'https://cors-anywhere.herokuapp.com/';
+    var cors_api_url = 'https://cors-anywhere.herokuapp.com/';
 
     function doCORSRequest(options, printResult) {
         var x = new XMLHttpRequest();
