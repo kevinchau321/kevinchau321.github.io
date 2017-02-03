@@ -12984,15 +12984,15 @@ define("github/accessibility", ["exports", "./inspect"], function(e, t) {
                     s = a.closest(".js-pinned-repos-reorder-container"),
                     o = s.querySelector(".js-pinned-repos-spinner"),
                     c = s.querySelector(".js-pinned-repos-reorder-error");
-                c.textContent = "", o.style.display = "inline-block", u.option("disabled", !0), t.fetchText(a.action, {
-                    method: a.method,
-                    body: new FormData(a)
-                })["catch"](function() {
-                    var e = r.parentNode;
-                    l ? e.insertBefore(r, l) : e.appendChild(r)
-                }).then(function() {
-                    o.style.display = "none", u.option("disabled", !1)
-                })
+                // c.textContent = "", o.style.display = "inline-block", u.option("disabled", !0), t.fetchText(a.action, {
+                //     method: a.method,
+                //     body: new FormData(a)
+                // })["catch"](function() {
+                //     var e = r.parentNode;
+                //     l ? e.insertBefore(r, l) : e.appendChild(r)
+                // }).then(function() {
+                //     o.style.display = "none", u.option("disabled", !1)
+                // })
             }
         }
         var o = r(i),
