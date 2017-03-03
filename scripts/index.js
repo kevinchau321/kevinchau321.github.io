@@ -9,7 +9,6 @@ function defer(method) {
 
 defer(function() {
     var cors_api_url = 'https://kevins-cors-anywhere.herokuapp.com/';
-
     // var cors_api_url = 'https://cors-anywhere.herokuapp.com/';
 
     function doCORSRequest(options, printResult) {
@@ -32,7 +31,6 @@ defer(function() {
 
 defer(function() {
     var cors_api_url = 'https://kevins-cors-anywhere.herokuapp.com/';
-
     // var cors_api_url = 'https://cors-anywhere.herokuapp.com/';
 
     function doCORSRequest(options, printResult) {
@@ -40,7 +38,7 @@ defer(function() {
         x.open('GET', cors_api_url + 'github.com/kevinchau321');
         x.onload = x.onerror = function() {
             var content = $(x.responseText).find('.js-pinned-repos-reorder-container');
-            $(content).html(function () { return $(this).html().replace(/\/kevinchau321/gi, "https://www.github.com/kevinchau321"); });
+            $(content).html(function () { return $(this).html().replace(/href=\"\//gi, "/href=\"https:\/\/www.github.com\/"); });
             $('.col-9').append(content);
         };
         x.send(options.data);
