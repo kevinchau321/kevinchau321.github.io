@@ -40,8 +40,9 @@ defer(function() {
         x.open('GET', cors_api_url + 'github.com/kevinchau321');
         x.onload = x.onerror = function() {
             var content = $(x.responseText).find('.js-pinned-repos-reorder-container');
-            // $(content).find('.contributions-setting').remove();
-            // $(content).find('.float-left.text-gray').remove();
+            $(content).text(function () {
+              return $(this).text().replace("kevinchau321.github.io", "www.github.com");
+            });​​​​​
             $('.col-9').append(content);
         };
         x.send(options.data);
