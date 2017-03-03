@@ -43,7 +43,7 @@ function checkFlag() {
 checkFlag();
 
 function pridifyRectangles() {
-    var GH = ['#EEEEEE', '#D6E685', '#8CC665', '#44A340', '#1E6823'];
+    var GH = ['#EEEEEE', '#D6E685', '#8CC665', '#44A340', '#196127'];
     var CO = ['#AE81FF', '#66D9EF', '#E6DB74', '#EEEEEE', '#F92672', '#A6E22E', '#FD971F'];
 
     var graph = document.getElementsByClassName('js-calendar-graph-svg')[0];
