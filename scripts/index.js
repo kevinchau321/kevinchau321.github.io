@@ -59,7 +59,7 @@ function checkFlag() {
         /* do something*/
         $.getScript('iso/iso.js');
         pridifyRectangles();
-        $('.legend').html('<ul class="legend"><li style="background-color: #eee"> <li style="background-color: #E6DB74"></li> <li style="background-color: #66D9EF"></li> <li style="background-color: #AE81FF"></li> <li style="background-color: #F92672"></li> <li style="background-color: #A6E22E"></li> <li style="background-color: #FD971F"></li> </ul>');
+        $('.legend').html('<ul class="legend"><li style="background-color: #eee"></li> <li style="background-color: #E6DB74"></li> <li style="background-color: #66D9EF"></li> <li style="background-color: #AE81FF"></li> <li style="background-color: #F92672"></li> <li style="background-color: #A6E22E"></li> <li style="background-color: #FD971F"></li> </ul>');
     }
 }
 checkFlag();
